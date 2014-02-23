@@ -1,0 +1,112 @@
+/*tous les liens*/
+a{
+	text-decoration: none;
+	/*color: rgb(41,197,191);*/
+	color: rgb(0,165,187);
+}
+
+a:hover{
+	color: rgb(0,123,219);
+	text-decoration: underline;
+}
+
+/*tous les boutons submit*/
+input[type="submit"]{
+	border: 1px solid black;
+	background-color: rgb(84,122,168);
+	color: white;
+	border-radius: 8px;
+	padding: 1px 7px;
+	font-weight: bold;
+}
+
+input[type="submit"]:hover{
+	border: 1px solid black;
+	background-color: rgb(52,190,255);
+	color: black;
+	cursor: pointer;
+}
+
+/*tous les input text, password et textarea*/
+input[type="text"], input[type="password"], textarea{
+	border: 1px solid rgb(84,105,189);
+	padding: 3px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus{
+	outline-width: 0px;
+	background-color: rgb(226,231,253);
+}
+
+/*BODY*/
+	body{
+		margin: 0px;
+		background-image: url('../ressources/retina_wood.png');
+		font-family: colaborate;
+	}
+
+	/*PAGE*/
+		/*conteneur général compris entre header et footer*/
+		#page{
+			width: 1000px;
+			margin: auto;
+			margin-bottom: 50px;
+		}
+
+	/*HEADER*/
+		body > header{
+			margin-top: 0px;
+			margin-bottom: 20px;	
+		}
+
+		body > header > a > div{
+			background-image: url("../ressources/header_fond.jpg");
+			background-repeat: no-repeat;
+			height: 150px;
+			width: 850px;
+			margin: auto;
+			background-position: center;
+			}
+
+		h1{
+			margin: 0px;
+			text-align: center;
+			font-size: 2em;
+			color: white;
+			position: relative;
+			top: 115px;
+			width: 850px;
+			background-color: rgba(0,0,0,0.5);
+			font-family: caviar;
+		}
+
+
+/*FOOTER*/
+	footer{
+		width: 1000px;
+		margin: auto;
+	}
+	footer > ul{
+		list-style: none;
+		text-align: center;
+		background-color: #f2f2f2;
+		border: 1px solid #ddd;
+		margin: 0px 140px 0px 150px;
+		padding: 5px 0px;
+	}
+
+	footer > ul > li{
+		display: inline-block;
+		margin: 0px 10px;
+	}
+	
+/* POLICES */
+@font-face{
+    font-family: 'caviar';
+    src: url('../ressources/CaviarDreams.ttf');
+    }
+
+@font-face{
+    font-family: 'colaborate';
+    src: url('../ressources/ColabReg.otf');
+    }

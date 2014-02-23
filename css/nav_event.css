@@ -1,0 +1,175 @@
+/*NAV*/
+	/*MENU GAUCHE*/
+		#menu{
+			width: 150px;
+			margin: 0px;
+			display: inline-block;
+		}
+		
+		/*Titre des menus*/
+		#menu > nav > header, #connecter > header{
+			background-color: rgb(127,202,245);
+			border: 1px outset rgb(132,181,235);
+			color: rgba(0,51,116,0.8);
+			padding: 5px;
+			font-weight: bold;
+			text-align: center;
+		}
+		
+		/*liste des menus*/
+		nav > ul{
+			list-style: none;
+			margin: 0px;
+			margin-bottom: 20px;
+			padding: 0px;
+			background-color: white;
+			border-bottom: 1px solid #ddd;
+		}
+		
+		/*élements des listes des menus*/
+		nav > ul > li{
+			position: relative;
+			text-align: left;
+			border: 1px solid #ddd;
+			border-bottom: none;
+			padding: 5px;
+		}
+		
+		/*icone de chaque li*/
+		nav > ul > li > a > div > img{
+			margin-right: 5px;
+		}
+		
+		/*hover des li ou li de la page courante*/
+		nav > ul > li:hover, nav #select{
+			background-color: rgb(185,232,250);
+		}
+		
+		nav > ul > li:hover .new_contenu{
+			display: block;
+		}
+		
+		/*Image Nouveau projet/réunion/article*/
+		.new_contenu{
+			position: absolute;
+			display: none;
+			right: 5%;
+			bottom: 25%;
+			top: center;
+			opacity: 0.5;
+		}
+		
+		.new_contenu:hover{
+			opacity: 1;
+		}
+
+/*-----------------------------------------------------------------------------------------*/
+	/*DROITE*/
+		#droite{
+			width: 140px;
+			display: inline-block;
+			margin: 0px;
+			vertical-align: top;
+		}
+		
+/*-----------------------------------------------------------------------------------------*/
+			/*LOGIN*/
+				#connecter{
+					border: 1px solid #ddd;
+					background-color: white;
+				}
+				
+				#connecter > div{
+					padding: 3px;
+				}
+				
+				#connecter > div >img{
+					margin-right: 5px;
+					float: left;
+				}
+				
+				#connecter > div > div +div{
+					margin-left: 21px;
+				}
+				
+				#deconnexion{
+					position: relative;
+					left: 105px;
+				}
+			
+/*-----------------------------------------------------------------------------------------*/
+			/*MINIATURE*/
+				#event > aside{
+					margin-top: 20px;
+				}
+				
+				/*titre de l'aside*/
+				aside > header{
+					padding: 5px;
+					font-weight: bold;
+					background-color: rgb(160,218,160);
+					border: 1px outset black;
+					color: rgb(2,87,2);
+					text-align: center;
+				}
+				
+				/*ensemble des sous divs*/
+				aside > div > div{
+					background-color: white;
+					border: 1px solid white;
+					border-bottom: 1px solid #ddd;
+					padding: 5px;
+				}
+				
+				aside > div > div:hover{
+					border: 1px solid rgb(130,130,130);
+				}
+				
+				/*titre des sous divs*/
+				aside > div header{
+					padding: 5px 2px;
+				}
+				
+				/*date des sous divs*/
+				aside > div > div > a + div{
+					text-align: right;
+					color: rgb(130,130,130);
+				}
+			
+/*-----------------------------------------------------------------------------------------*/
+					/*REUNIONS MINIATURES */
+					/*titre Reunions à venir*/
+					#next_reunion > header{
+						background-color: rgb(160,218,160);
+						border-color: rgb(160,218,160);
+					}
+					/*titre des sous divs*/
+					#next_reunion > div header{
+						color: green;
+					}
+					
+					/*hover des liens*/
+					#next_reunion a:hover{
+						color: green;
+					}
+
+/*-----------------------------------------------------------------------------------------*/					
+				/*MEMBRES DERNIERS INSCRITS MINIATURE*/
+					/*titre Derniers membres inscrits*/
+					#membres_nouveau > header{
+						background-color: rgb(255,144,144);
+						border-color: rgb(255,144,144);
+						color: rgb(201,0,0);
+					}
+					
+					/*titre des sous divs*/
+					#membres_nouveau > div header{
+						color: red;
+					}
+					
+					/*hover des liens*/
+					#membres_nouveau a:hover{
+						color: red;
+					}
+
+/*-----------------------------------------------------------------------------------------*/

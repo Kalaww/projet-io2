@@ -1,0 +1,9 @@
+/*Style simple pour les pages simples */
+	#cadre{
+		background-color: white;
+		border: 1px solid #ddd;
+		width: 60%;
+		margin: auto;
+		padding: 10px;
+		margin-bottom: 500px;
+	}

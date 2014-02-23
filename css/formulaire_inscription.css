@@ -1,0 +1,59 @@
+/*formulaire d'inscription*/
+	/*conteneur*/
+	#inscr{
+		margin: 10px auto;
+		width: 80%;
+		background-color: white;
+		border: 1px solid #ddd;
+		padding-bottom: 20px;
+	}
+	
+	/*titre du conteneur*/
+	#inscr > header{
+		text-align: center;
+		font-size: 1.7em;
+		margin-bottom: 20px;
+		padding: 10px;
+		background-color: rgba(58,206,0,0.65);
+		color: white;
+	}
+	
+	/*tableau contenant le formulaire*/
+	#formulaire_inscription{
+		margin: 0px auto;
+		width: 100%;
+		text-align: right;
+	}
+	
+	/*input du formulaire*/
+	.td_input{
+		position: relative;
+		width: 50%;
+		text-align: left;
+	}
+	
+	/*bulle d'aide du formulaire*/
+	.bulle_aide{
+		position: relative;
+		display: none;
+		color: green;
+		border: 1px solid rgb(42,129,15);
+		border-radius: 4px;
+		box-shadow: 2px 2px 1px rgba(0,0,0,0.3);
+		background-color: rgb(189,233,183);
+		background-image: url('../ressources/help.png');
+		background-repeat: no-repeat;
+		background-position: 5px 50%;
+		padding: 2px 5px;
+		padding-left: 27px;
+	}
+	
+	/*active bulle d'aide*/
+	.td_input > input:focus + .bulle_aide{
+		display: inline-block;
+	}
+	
+	/*retour accueil*/
+	#inscr > div{
+		margin: 20px 0px 0px 20px;
+	}

@@ -1,0 +1,628 @@
+/*CSS POUR LES MOBILES*/
+/* A tester avec un émulateur d'iPhone (width:640px) comme Chrome 
+	(Outils de developpement > Settings > Overrides > Device metrics > Screen resolution (640x960:iPhone4&5))*/
+/*BODY*/
+	body{
+		width: 100%;
+	}
+
+	/*----------------------------------------------------------------------------*/
+	/*HEADER*/
+		body > header > a > div, body > header h1{
+			width: 100%;
+		}
+	
+	/*----------------------------------------------------------------------------*/
+	/*FOOTER*/
+		footer{
+			width: 100%;
+			margin: 20px 0px 0px 0px;
+		}
+		
+		footer > ul{
+			margin: 0px;
+			font-size: 100%;
+		}
+
+	/*----------------------------------------------------------------------------*/
+	/*CONTENEUR PRINCIPAL*/
+		#page{
+			width: 100%;
+			margin: 0px;
+		}
+		
+		/*----------------------------------------------------------------------------*/
+		/*MENU*/
+			/*conteneur*/
+			#menu{
+				width: 100%;
+			}
+			
+			/*titre des listes*/
+			#menu > nav > header{
+				font-size: 150%;
+			}
+			
+			/*li des listes des menus*/
+			#menu > nav > ul > li{
+				font-size: 100%;
+				text-align: center;
+			}
+			
+			/*Image Nouveau projet/réunion/article*/
+			.new_contenu{
+				display: block;
+			}
+			
+		/*----------------------------------------------------------------------------*/
+		/*CONTENEUR DROIT*/
+			/*CONNEXION*/
+				/*conteneur*/
+				#droite{
+					width: 100%;
+				}
+				
+				/*titre "connexion"*/
+				#connecter > header{
+					font-size: 150%;
+				}
+				
+				/*conteneur nom et prenom de la session*/
+				#connecter > div{
+					text-align: center;
+				}
+				
+				/*nom et prenom de la session*/
+				#connecter > div > div{
+					display: inline-block;
+					font-size: 100%;
+				}
+				
+				/*tableau du formulaire*/
+				#connecter > table{
+					width: 100%;
+					text-align: center;
+				}
+				
+				/*td du tableau du formulaire*/
+				#connecter > table td{
+					padding: 5px;
+				}
+				
+				/*titre des inputs*/
+				#connecter > table label, #connecter > table input[type="submit"]{
+					font-size: 100%;
+				}
+				
+				/*input text et password*/
+				#connecter > table input[type="text"], #connecter > table input[type="password"]{
+					width: 50%;
+					font-size: 100%;
+				}
+				
+				/*div "rejoignez nous"*/
+				#connecter > table + div{
+					text-align: center;
+					font-size: 100%;
+				}
+			
+			/*MINIATURE REUNIONS et MINIATURE MEMBRES*/
+				/*titre de la liste*/
+				#event  aside > header{
+					font-size: 150%;
+				}
+				
+				/*titre de chaque item*/
+				#event aside a > header{
+					font-size: 100%;
+				}
+				
+				/*date des miniatures item*/
+				aside > div > div > a + div{
+					font-size: 80%;
+				}
+				
+		/*----------------------------------------------------------------------------*/
+		/*CONTENEUR CENTRAL*/
+			#milieu{
+				width: 100%;
+				min-height: 0px;
+				margin: 10px 0px;
+			}
+			
+			/*----------------------------------------------------------------------------*/
+			/*accueil*/
+				/*message accueil*/
+				#message_accueil{
+					font-size: 100%;
+				}
+				
+				/*titre derniers articles et derniers projets*/
+				#derniers_articles > header, #derniers_projets > header{
+					font-size: 200%;
+					margin: 10px 0px 10px 0px;
+				}
+				/*derniers articles*/
+				#derniers_articles > article{
+					width: 100%;
+					padding: 0px;
+					margin: 10px 0px;
+					height: auto;
+					border-radius: 10px;
+				}
+				
+				/*titre des articles*/
+				#derniers_articles > article > a > header{
+					font-size: 150%;
+					margin: 10px 5px;
+				}
+				
+				/*auteur, date, text, statut*/
+				.article_auteur, .article_date, .article_statut, #derniers_articles > article p{
+					font-size: 80%;
+					margin: 5px 5px;
+				}
+				
+				#derniers_articles > article p{
+					font-size: 100%;
+					margin: 10px 5px;
+				}
+				
+				/*derniers projets conteneur*/
+				#derniers_projets{
+					width: 100%;
+					border: none;
+				}
+				
+				/*ul derniers projets*/
+				#derniers_projets > ul{
+					margin: 0px;
+				}
+				
+				/*titre des derniers projets*/
+				#derniers_projets > ul > li > header{
+					font-size: 120%;
+				}
+				
+				/*date et participants aux derniers projets*/
+				#derniers_projets > ul > li > div{
+					font-size: 100%;
+				}
+		
+			/*----------------------------------------------------------------------------*/
+			/*ORGANIGRAMME*/
+				/*conteneur*/
+				#organigramme{
+					padding: 20px 0px 0px 0px;
+				}
+				
+				/*titre des sections*/
+				#organigramme > section > header{
+					font-size: 130%;
+				}
+				
+				/*ul de la liste des membres*/
+				#organigramme > section > ul{
+					font-size: 100%;
+				}
+				
+			/*----------------------------------------------------------------------------*/
+			/*LISTE DES ARTICLES*/
+				/*conteneur*/
+				#list_article{
+					padding: 20px 5px;
+					font-size: 100%;
+				}
+				
+				/*titre*/
+				#list_article > header{
+					font-size: 150%;
+				}
+				
+				/*formulaire*/
+				#list_article > div > form > input, #list_article > div > form > select{
+					font-size: 100%;
+				}
+				
+				/*submit formulaire*/
+				#list_article > div > form input[type="submit"]{
+					font-size: 90%;
+				}
+				
+				/*ul de la liste des articles*/
+				#list_article > ul{
+					list-style: none;
+					padding: 0px;
+				}
+				
+				/*li des articles*/
+				#list_article > ul > li{
+					padding: 10px;
+				}
+				
+				/*titre des articles*/
+				#list_article > ul > li > a > header{
+					font-size: 100%;
+				}
+				
+				/*date et statut des articles*/
+				.list_article_date, .list_article_statut{
+					font-size: 80%;
+					width: 45%;
+				}
+				
+			/*----------------------------------------------------------------------------*/
+			/*ARTICLE UNIQUE*/
+				/*titre de l'article*/
+				#list_article > article > header{
+					font-size: 150%;
+				}
+				
+				/*date auteur statut*/
+				#list-article .article_auteur, #list_article .article_date, #list_article .article_statut{
+					font-size: 80%;
+				}
+				
+				/*liste des modifieurs*/
+				#list_article .article_modif{
+					font-size: 80%;
+				}
+				
+				/*text*/
+				#list_article p{
+					font-size: 100%;
+				}
+				
+				/*boutons editer et supprimer*/
+				#list_article .article_edite{
+					top: -2%;
+				}
+				
+				/*popup des modificateurs*/
+				.article_modif_more_popup{
+					right: 0px;
+				}
+				
+			/*----------------------------------------------------------------------------*/
+			/*ARTICLE NOUVEAU et ARTICLE EDITER*/
+				/*conteneur*/
+				#article_nouveau, #article_editer{
+					width: 100%;
+					margin: auto;
+					padding: 20px 0px;
+				}
+				
+				/*titre*/
+				#article_nouveau > header, #article_editer > header{
+					font-size: 150%;
+					margin-bottom: 20px;
+				}
+				
+				/*form*/
+				#article_nouveau form, #article_editer form{
+					margin: 0px 0px 0px 10px;
+				}
+				
+				/*tableau contenant le formulaire*/
+				#article_nouveau table, #article_editer table{
+					font-size: 100%;
+				}
+				
+				/*tr du tableau contenant le formulaire*/
+				#article_nouveau table td, #article_editer table td{
+					padding-bottom: 10px;
+				}
+				
+				/*inputs text et textarea*/
+				#article_nouveau input[type="text"], #article_nouveau textarea, #article_editer input[type="text"], #article_editer textarea{
+					width: 80%;
+					font-size: 100%;
+				}
+				
+				/*textarea*/
+				#article_nouveau textarea, #article_editer textarea{
+					height: 300px;
+				}
+				
+				/*submit formulaire*/
+				#article_nouveau input[type="submit"], #article_editer input[type="submit"]{
+					font-size: 100%;
+				}
+				
+				#article_nouveau #aide_titre, #article_editer #aide_titre{
+					bottom: 80%;
+					right: 25%;
+				}
+			
+			/*----------------------------------------------------------------------------*/
+			/*MON PROFIL*/
+				/*titre*/
+				#page_perso > .partie > header{
+					font-size: 150%;
+				}
+				
+				/*description*/
+				#page_perso > .partie > div > div > div{
+					font-size: 100%;
+				}
+				
+				/*formulaire modif du profil*/
+				#page_perso > .partie > form{
+					font-size: 100%;
+				}
+				
+				/*input du formulaire de modif*/
+				#page_perso input, #page_perso textarea{
+					font-size: 100%;
+					margin-bottom: 10px;
+					width: 80%;
+				}
+				
+				/*desincription*/
+				#page_perso #desincription{
+					font-size: 100%;
+					width: 50%;
+				}
+				
+			/*----------------------------------------------------------------------------*/
+			/*REUNIONS*/
+				/*conteneur*/
+				#reunion{
+					padding: 20px 0px;
+					font-size: 100%;
+				}
+				
+				/*titre*/
+				#reunion > header{
+					font-size: 150%;
+				}
+				
+				/*ul liste des reunions*/
+				#reunion > ul{
+					list-style: none;
+					padding: 0px;
+				}
+				
+				/*titre d'une reunion*/
+				#reunion > ul > li > header{
+					font-size: 150%;
+				}
+				
+				/*date et participants*/
+				#reunion .date, #reunion .participants{
+					font-size: 80%;
+				}
+			
+			/*----------------------------------------------------------------------------*/
+			/*AJOUTER REUNION et EDITER REUNION*/
+				/*conteneur*/
+				#reunion_nouvelle, #reunion_editer{
+					padding: 20px 0px;
+					font-size: 100%;
+				}
+				
+				/*titre*/
+				#reunion_nouvelle > header, #reunion_editer > header{
+					font-size: 150%;
+				}
+				
+				/*inputs text, select et textarea*/
+				#reunion_nouvelle input[type="text"], #reunion_nouvelle select, #reunion_nouvelle textarea, #reunon_editer input[type="text"],#reunion_editer select, #reunion_editer textarea{
+					width: 80%;
+					font-size: 100%;
+				}
+				
+				/*submit du formulaire*/
+				#reunion_nouvelle input[type="submit"], #reunion_editer input[type="submit"]{
+					font-size: 90%;
+				}
+				
+				/*bulle d'aide du titre*/
+				#reunion_nouvelle #aide_titre, #reunion_editer #aide_titre{
+					top: auto;
+					bottom: 80%;
+					right: 25%;
+				}
+				
+			/*----------------------------------------------------------------------------*/
+			/*PROJETS*/
+				/*conteneur*/
+				#projets{
+					padding: 20px 0px;
+					font-size: 100%;
+				}
+				
+				/*titre*/
+				#projets > header{
+					font-size: 150%;
+				}
+				
+				/*ul de la liste des projets*/
+				#projets > ul{
+					list-style: none;
+					padding: 0px;
+				}
+				
+				/*titre du projet*/
+				#projets > ul > li > header{
+					font-size: 150%;
+				}
+				
+				/*texte du projet*/
+				#projets > ul > li > p{
+					font-size: 100%;
+				}
+				
+				/*date avancement participants du projet*/
+				#projets .projet_date, #projets .projet_avancement, #projets .projet_participants{
+					font-size: 80%;
+				}
+				
+				/*date du projet*/
+				#projets .projet_date{
+					width: 25%;
+				}
+				
+				/*avancement du projet*/
+				#projets .projet_avancement{
+					width: 65%
+				}
+				
+				/*bulle d'avancement du projet*/
+				#projets .etat_projet_progress, #projets .etat_projet_terminer{
+					
+				}
+				
+			/*----------------------------------------------------------------------------*/
+			/*PROJET NOUVEAU et PROJET EDITER*/
+				/*conteneur*/
+				#projet_nouveau, #projet_editer{
+					font-size: 100%;
+					padding: 20px 0px;
+				}
+				
+				/*titre*/
+				#projet_nouveau > header, #projet_editer > header{
+					font-size: 150%;
+				}
+				
+				/*input et textarea du formulaire*/
+				#projet_nouveau input, #projet_nouveau textarea, #projet_editer input, #projet_editer textarea{
+					font-size: 100%;
+					width: 80%;
+				}
+				
+			/*----------------------------------------------------------------------------*/
+			/*ADHERENTS*/
+				/*conteneur*/
+				#adherent{
+					padding: 20px 0px;
+					font-size: 100%;
+				}
+				
+				/*titre*/
+				#adherent  > header{
+					font-size: 150%;
+				}
+				
+				/*ul de la liste des adherents*/
+				#adherent > ul{
+					list-style: none;
+					padding: 0px;
+				}
+				
+				/*Nom Prénom de l'adherent*/
+				#adherent > ul > li > header{
+					font-size: 120%;
+				}
+				
+				/*
+				
+			/*----------------------------------------------------------------------------*/
+			/*PROFIL*/
+				/*conteneur*/
+				#profil{
+					font-size: 100%;
+					padding: 20px 0px;
+				}
+				
+				/*titre*/
+				#profil > header{
+					font-size: 150%;
+				}
+				
+				/*image*/
+				#profil > img{
+					width: 25%;
+					border: 1px solid rgb(10,10,10);
+				}
+				
+				/*description*/
+				#profil > div{
+					width: 60%;
+				}
+				
+				/*articles rédigés par profil*/
+				#profil > div + div{
+					width: 100%;
+				}
+				
+				/*Vers son profil*/
+				#profil > div + div + div{
+					width: 60%;
+					text-align: right;
+					margin-left: auto;
+				}
+				
+			/*----------------------------------------------------------------------------*/
+			/*COMPETENCES*/
+				/*conteneur*/
+				#competences{
+					padding: 20px 0px;
+					overflow: auto;
+				}
+				
+				/*titre*/
+				#competences > header{
+					font-size: 200%;
+				}
+				
+				/*tableau*/
+				#competences > table{
+					font-size: 80%;
+				}
+				
+				/*tr et td du tableau*/
+				#competences td, #competences th, #competences tr, #competences .table_comp{
+					max-width: 100%;
+				}
+				
+/*----------------------------------------------------------------------------*/
+/*FORMULAIRE D'INSCRIPTION*/
+	/*conteneur*/
+	#inscr{
+		width: 100%;
+		border: none;
+		padding: 0px;
+	}
+	
+	/*titre*/
+	#inscr > header{
+		padding: 10px;
+		font-size: 150%;
+	}
+	
+	/*tableau contenant le formulaire*/
+	#formulaire_inscription{
+		font-size: 100%;
+	}
+	
+	/*tr du tableau*/
+	#formulaire_inscription input{
+		margin-bottom: 15px;
+	}
+	
+	/*bulle d'aide du formulaire*/
+	.input_js{
+		bottom: 0px;
+		left: 0px;
+	}
+	
+	/*retour accueil*/
+	#inscr > div{
+		padding-bottom: 10px;
+	}s
+/*----------------------------------------------------------------------------*/
+/*PAGES SIMPLES*/
+	#cadre{
+		width: 100%;
+		font-size: 100%;
+		padding: 0px;
+		margin: 20px 0px;
+		border: none;
+	}
+
+	#cadre div{
+		margin: 10px;
+		padding: 10px;
+	}

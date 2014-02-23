@@ -1,0 +1,948 @@
+/*ENSEMBLE*/
+	/*conteneur de la colonne du milieu*/
+	#milieu{
+		width: 680px;
+		display: inline-block;
+		margin: 0px 10px;
+		vertical-align: top;
+		min-height: 600px;
+		
+	}
+/*-----------------------------------------------------------------------------------------*/
+		/*accueil*/
+			#message_accueil{
+				background-color: white;
+				border: 1px solid #ddd;
+				border-bottom: none;
+				text-align: center;
+				padding: 10px;
+			}
+			
+			/*DERNIERS ARTICLES*/
+				/*fond de l'ensemble des articles*/
+				#derniers_articles{
+					background-color: rgba(247,247,247,0.5);
+					border: 1px solid #ddd;
+				}
+				
+				/*titre*/
+				#derniers_articles > header, #derniers_projets > header{
+					font-size: 200%;
+					text-align: center;
+					margin: 20px;
+					padding: 10px;
+					color: white;
+					text-shadow: 2px 2px 2px rgba(0,0,0,0.25);
+				}
+				
+				/*contenant de chaque article*/
+				#derniers_articles > article{
+					width: 290px;
+					height: 260px;
+					display: inline-block;
+					vertical-align: top;
+					margin: 10px;
+					padding: 10px;
+					background-color: white;
+					border: 1px solid white;
+				}
+				
+				#derniers_articles > article:hover{
+					box-shadow: 0px 0px 10px #aaa;
+					border: 1px solid rgb(180,180,180);
+				}
+				
+				/*titre des articles*/
+				#derniers_articles > article > a > header{
+					font-size: 20px;
+					font-weight: bold;
+					margin-bottom: 10px;
+					text-align: justify;
+				}
+				
+				/*date des articles*/
+				.article_date{
+					text-align: right;
+					font-style: italic;
+					font-size: 15px;
+				}
+				
+				/*text des articles*/
+				#derniers_articles > article > p{
+					margin: 5px 10px;
+					font-family: arial;
+					text-align: justify;
+					text-indent: 15px;
+					font-size: 15px;
+				}
+				
+				/*auteur de l'article*/
+				.article_auteur{
+					font-size: 15px;
+				}
+			
+			/*DERNIERS PROJETS*/
+				/*conteneur*/
+				#derniers_projets{
+					background-color: rgba(247,247,247,0.5);
+					border: 1px solid #ddd;
+					margin: 10px auto;
+					width: 50%;
+				}
+				
+				/*ul des derniers projets*/
+				#derniers_projets > ul{
+					list-style: none;
+					margin: 20px 20px;
+					padding: 0px;
+					border-bottom: 1px solid rgb(190,190,190);
+				}
+				
+				/*li des derniers projets*/
+				#derniers_projets > ul > li{
+					background-color: white;
+					border: 1px solid rgb(190,190,190);
+					border-bottom-color: white;
+					padding: 10px;
+				}
+				
+				#derniers_projets > ul > li:hover{
+					box-shadow: 0px 0px 10px #aaa;
+					border: 1px solid rgb(180,180,180);
+				}
+				
+				/*titre du projet*/
+				#derniers_projets > ul > li > header{
+					font-size: 16px;
+					font-weight: bold;
+				}
+				
+				/*date et nombres participants du projet*/
+				#derniers_projets > ul > li > div{
+					display: inline-block;
+					width: 45%;
+					color: rgb(130,130,130);
+				}
+
+/*-----------------------------------------------------------------------------------------*/
+		/*ORGANIGRAMME*/
+			/*fond*/
+			#organigramme{
+				border: 1px solid #ddd;
+				background-color: rgba(255,255,255,0.5);
+				padding: 20px 20px 0px 20px;
+			}
+			
+			/*parties de l'organigramme*/
+			#organigramme > section{
+				border: 1px dotted #ddd;
+				margin-bottom: 20px;
+				background-color: rgb(247,247,247);
+			}
+			
+			/*Titre des grades*/
+			#organigramme > section > header{
+				text-align: center;
+				font-size: 1.5em;
+				font-weight: bold;
+				padding: 10px;
+				background-color: rgb(187,223,240);
+			}
+			
+			/*listes des membres de chaque grade*/
+			#organigramme > section > ul{
+				text-align: center;
+				list-style: none;
+				padding: 0px;
+				font-size: 17px;
+			}
+		
+/*-----------------------------------------------------------------------------------------*/
+		/*ARTICLE UNIQUE*/
+			/*conteneur*/
+			#list_article > article{
+				position: relative;
+			}
+			
+			/*titre de l'article*/
+			#list_article > article > header{
+				font-size: 23px;
+				font-weight: bold;
+				padding: 10px 0px;
+			}
+			
+			/*auteur de l'article*/
+			.article_auteur{
+				font-size: 17px;
+			}
+			
+			/*date de l'article*/
+			.article_date{
+				font-size: 17px;
+			}
+			
+			/*texte de l'article*/
+			#list_article p{
+				margin: 5px 10px;
+				font-family: arial;
+				text-align: justify;
+				text-indent: 15px;
+				font-size: 16px;
+			}
+			
+			/*statut de l'article*/
+			.article_statut{
+				margin: 10px;
+				text-align:	center;
+			}
+			
+			/*Personne ayant modifié l'article*/
+			.article_modif{
+				font-size: 13px;
+				border-top: 1px dashed #ddd;
+				margin-top: 10px;
+				padding: 10px;
+			}
+			
+			/*icone des autres modif*/
+			.article_modif_more{
+				position: relative;
+				top: 3px;
+				padding: 0px 5px;
+				display: inline-block;
+				opacity: 1;
+				cursor: pointer;
+			}
+			
+			/*popup des autres personnes qui ont modifié l'article*/
+			.article_modif_more_popup{
+				position: absolute;
+				background-color: #000000;
+				color: white;
+				bottom: 20px;
+				white-space: nowrap;
+				padding: 5px;
+				opacity: 1;
+			}
+			
+			/*liens dans le popup*/
+			.article_modif_more_popup > span > a{
+				color: white;
+			}
+			
+			.article_modif_more_popup > span > a:hover{
+				color: rgb(102,196,226);
+			}
+			
+			/*conteneur des boutons editer et supprimer*/
+			.article_edite{
+				position: absolute;
+				top: 0px;
+				right: 0px;
+			}
+			
+			/*icone des boutons editer et supprimer*/
+			.article_edite > span img{
+				opacity: 0.5;
+			}
+			
+			.article_edite > span img:hover{
+				opacity: 1;
+				cursor: pointer;
+			}
+			
+			/*commentaire*/
+			.commentaire, #nouveau_commentaire{
+				border-top: 1px dashed rgb(150,150,150);
+				padding: 10px 10px 30px 10px;
+				position: relative;
+			}
+			
+			.commentaire:hover{
+				background-color: rgb(196,237,253);
+			}
+			
+			/*titre du commentaire*/
+			.commentaire > header{
+				text-align: right;
+				font-size: 90%;
+			}
+			
+			/*texte du commentaire*/
+			.commentaire > div{
+				font-family: arial;
+			}
+			
+			/*formulaire du nouveau commentaire*/
+			#nouveau_commentaire form{
+				margin: 0px;
+			}
+			
+			/*nouveau commentaire*/
+			#nouveau_commentaire textarea{
+				width: 95%;
+				margin: 10px;
+				border-radius: 3px;
+			}
+			
+			/*submit nouveau commentaire*/
+			#nouveau_commentaire input[type="submit"]{
+				display: block;
+			}
+			
+			/*supprimer commentaire*/
+			.commentaire_supprimer{
+				position: absolute;
+				bottom: 10%;
+				right: 3%;
+				opacity: 0.5;
+				display: none;
+			}
+			
+			.commentaire:hover .commentaire_supprimer{
+				display: block;
+			}
+			
+			.commentaire_supprimer:hover{
+				opacity: 1;
+				cursor: pointer;
+			}
+				
+			
+/*-----------------------------------------------------------------------------------------*/
+		/*LISTE ARTICLES*/
+			#list_article{
+				background-color: white;
+				border: 1px solid #ddd;
+				padding: 20px;
+			}
+			
+			/*Titre "Listes des articles"*/
+			#list_article > header{
+				text-align: center;
+				padding: 10px;
+				margin: 0px 0px 20px 0px;
+				border: 1px dotted #ddd;
+				background-color: #f2f2f2;
+				font-size: 23px;
+				font-weight: bold;
+			}
+			
+			/*ul de la liste des articles*/
+			#list_article > ul{
+				list-style-image: url('../ressources/article.png');
+			}
+			
+			/*li de la liste des articles*/
+			#list_article > ul > li{
+				margin-bottom: 10px;
+				border: 1px dashed #ddd;
+				padding: 5px;
+				background-color: white;
+			}
+			
+			#list_article > ul > li:hover{
+				background-color: rgb(183,207,243);
+				border-color: blue;
+			}
+			
+			/*titre des articles*/
+			#list_article > ul > li  > a  > header{
+				background-color: #f2f2f2;
+				margin-bottom: 5px;
+				padding: 5px;
+				font-size: 18px;
+			}
+			
+			/*date des articles*/
+			.list_article_date{
+				display: inline-block;
+				font-size: 14px;
+			}
+			
+			/*statut des articles*/
+			.list_article_statut{
+				text-align: right;
+				display: inline-block;
+				width: 75%;
+				font-size: 14px;
+			}
+			
+			/*image du statut des articles*/
+			.list_article_statut > img{
+				margin-right: 5px;
+			}
+			
+			/*page des listes d'articles*/
+			#article_pages{
+				text-align: center;
+			}
+			
+/*-----------------------------------------------------------------------------------------*/
+		/*NOUVELLE ARTICLE et EDITER ARTICLE*/
+			/*contenant*/
+			#article_nouveau, #article_editer{
+				background-color: white;
+				border: 1px solid #ddd;
+				padding: 20px;
+			}
+			
+			/*titre page*/
+			#article_nouveau > header, #article_editer > header{
+				text-align: center;
+				font-size: 23px;
+				font-weight: bold;
+			}
+			/*conteneur de la bulle d'aide*/
+			#article_nouveau_titre, #article_editer_titre{
+				position: relative;
+			}
+			
+			/*bulle d'aide*/
+			#aide_titre{
+				display: none;
+				color: green;
+				border: 1px solid rgb(42,129,15);
+				border-radius: 4px;
+				box-shadow: 2px 2px 1px rgba(0,0,0,0.3);
+				background-color: rgb(189,233,183);
+				background-image: url('../ressources/help.png');
+				background-repeat: no-repeat;
+				background-position: 5px 50%;
+				padding: 2px 5px;
+				padding-left: 27px;
+				margin-bottom: 10px;
+				position: absolute;
+			}
+			
+			/*active bulle d'aide*/
+			#titre:focus + #aide_titre{
+				display: inline;
+			}
+			
+			#article_nouveau #aide_titre, #article_editer #aide_titre{
+				bottom: 20px;
+				right: 5px;
+			}
+		
+/*-----------------------------------------------------------------------------------------*/
+		/*PAGE PERSO*/
+			/*blocs contenu dans la colonne milieu*/
+			.partie{
+				background-color: white;
+				border: 1px solid #ddd;
+				margin-bottom: 10px;
+			}
+			
+			/*titre des blocs*/
+			.partie > header{
+				text-align: center;
+				font-size: 23px;
+				font-weight: bold;
+				margin: 0px;
+				margin-bottom: 10px;
+				padding: 10px;
+				background-color: rgb(0,114,179);
+				color: white;
+				border: 1px outset rgb(0,71,112);
+			}
+			
+			/*image du grade et profil*/
+			.partie > div > img, .partie > header+div > div{
+				display: inline-block;
+				vertical-align: top;
+				margin: 10px;
+			}
+			
+			/*Mes articles*/
+			#mes_articles{
+				margin-top: 50px;
+				text-align: left;
+			}
+			
+			/*liste de mes articles*/
+			#mes_articles ul{
+				list-style-image: url('../ressources/article.png');
+			}
+			
+			/*formulaire*/
+			form{
+				margin: 20px;
+			}
+			
+			/*Bulles d'aide pour le formulaire*/
+			.bulle_aide{
+				display: none;
+				color: green;
+				border: 1px solid rgb(42,129,15);
+				border-radius: 4px;
+				box-shadow: 2px 2px 1px rgba(0,0,0,0.3);
+				background-color: rgb(189,233,183);
+				background-image: url('../ressources/help.png');
+				background-repeat: no-repeat;
+				background-position: 5px 50%;
+				padding: 2px 5px;
+				padding-left: 27px;
+			}
+			
+			/*active bulle d'aide*/
+			.td_input > input:focus + .bulle_aide{
+				display: inline-block;
+			}
+			
+			/*Desincription*/
+			#desincription{
+				padding: 10px;
+				margin-right: 0px;
+				margin-left: auto;
+				width: 100px;
+				text-align: center;
+				background-color: rgb(255,103,103);
+				border-radius: 10px;
+				box-shadow: 0px 0px 10px rgb(177,63,63);
+			}
+			
+			/*lien de desincription*/
+			#desincription a{
+				color: white;
+			}
+		
+/*-----------------------------------------------------------------------------------------*/
+		/*LIST ADHERENTS*/
+			/*contenant*/
+			#adherent{
+				background-color: white;
+				border: 1px solid #ddd;
+				padding: 20px;
+			}
+			
+			/*titre de la page*/
+			#adherent > header{
+				text-align: center;
+				padding: 10px;
+				margin: 0px 0px 20px 0px;
+				border: 1px dotted #ddd;
+				background-color: #f2f2f2;
+				font-size: 23px;
+				font-weight: bold;
+			}
+			
+			/*ul liste adherents*/
+			#adherent > ul{
+				list-style-image: url('../ressources/user.png');
+			}
+			
+			/*li liste adherents*/
+			#adherent > ul > li{
+				margin-bottom: 10px;
+				border: 1px dashed #ddd;
+				padding: 5px;
+			}
+			
+			#adherent > ul > li:hover{
+				background-color: rgb(183,207,243);
+				border-color: blue;
+			}
+			
+			/*Nom des adherents*/
+			#adherent > ul > li > div > a > header{
+				background-color: #f2f2f2;
+				padding: 5px;
+				margin-bottom: 5px;
+			}
+			
+			/*formulaire de changement de grade*/
+			.adherent_form > form{
+				margin: 0px;
+			}
+			
+/*-----------------------------------------------------------------------------------------*/
+		/*COMPETENCES*/
+			/*contenant*/
+			#competences{
+				background-color: white;
+				border: 1px solid #ddd;
+				padding: 20px;
+			}
+			
+			/*titre de la page*/
+			#competences > header{
+				font-size: 23px;
+				font-weight: bold;
+				text-align: center;
+				margin-bottom: 30px;
+			}
+			
+			/*tableau*/
+			#competences > table{
+				border-collapse: collapse;
+			}
+			
+			/*tete des colonnes*/
+			#competences > table th{
+				text-align: center;
+				background-color: rgb(100,129,190);
+				padding: 5px 10px;
+				color: white;
+			}
+			
+			/*ligne du tableau*/
+			#competences > table tr{
+				margin: 0px;
+				text-align: center;
+				background-color: rgb(240,240,240);
+			}
+			
+			/*ligne paire du tableau*/
+			#competences > table tr:nth-child(odd){
+				background-color: rgb(255,255,255);
+			}
+			
+			#competences > table tr:hover{
+				border: 1px solid rgb(190,190,190);
+			}
+			
+			/*compétences*/
+			.table_comp{
+				background-color: rgb(192,217,255);
+				text-align: left;
+				padding: 5px;
+				font-weight: bold;
+				color: white;
+			}
+			
+			/*compétences détails*/
+			.table_head{
+				text-align: left;
+				padding: 5px;
+				padding-left: 20px;
+			}
+			
+/*-----------------------------------------------------------------------------------------*/
+		/*REUNIONS*/
+			/*contenant*/
+			#reunion{
+				border: 1px solid #ddd;
+				background-image: url('../ressources/wool.png');
+				padding: 20px;
+				list-style-image: url('../ressources/reunion.png');
+			}
+			
+			/*titre de la page*/
+			#reunion > header{
+				text-align: center;
+				padding: 10px;
+				margin: 0px 0px 20px 0px;
+				border: 1px dotted #ddd;
+				background-color: #f2f2f2;
+				font-size: 23px;
+				font-weight: bold;
+			}
+
+			/*li de la liste des réunios*/
+			#reunion > ul > li{
+				position: relative;
+				margin-bottom: 10px;
+				padding: 10px;
+				border: 1px solid rgb(190,190,190);
+				background-color: white;
+			}
+			
+			#reunion > ul > li:hover{
+				border-color: rgb(130,130,130);
+				box-shadow: 0px 0px 10px rgb(130,130,130);
+			}
+			
+			/*titre de la réunion*/
+			#reunion > ul > li > header{
+				padding: 10px;
+				margin-bottom: 5px;
+				margin-bottom: 0px;
+				font-size: 22px;
+				font-weight: bold;
+			}
+			
+			/*conteneur date et heure*/
+			.date{
+				margin-top: 0px;
+				margin-bottom: 10px;
+				padding: 0px;
+				font-size: 15px;
+			}
+			
+			/*div de date et div de heure*/
+			.date > div{
+				display: inline-block;
+			}
+			
+			/*icone de date et de heure*/
+			.date > div > img{
+				margin-left: 20px;
+				margin-right: 5px;
+			}
+			
+			/*texte de la réunion*/
+			#reunion > ul > li > p{
+				padding: 20px;
+				margin: 0px;
+				border-top: 1px dashed rgb(200,200,200);
+				border-bottom: 1px dashed rgb(200,200,200);
+				background-color: rgba(255,255,255,0.7);
+				font-family : arial;
+				text-align: justify;
+			}
+			
+			/*conteneur des participants à la réunion*/
+			.participants{
+				margin: 10px;
+			}
+			
+			/*conteneur liste participants et boutton inscription*/
+			.participants > div{
+				display: inline-block;
+				vertical-align: top;
+				width: 40%;
+			}
+			
+			/*ul de la liste des participants à la réunion*/
+			.participants > div > ul{
+				list-style-image: url('../ressources/user.png');
+			}
+			
+			/*boutons editer et supprimer*/
+			.reunion_edite{
+				position: absolute;
+				top: 15px;
+				right: 10px;
+			}
+			
+			/*icones editer et supprimer*/
+			.reunion_edite > span img{
+				opacity: 0.5;
+			}
+			
+			/*hover sur les icones editer et supprimer*/
+			.reunion_edite > span img:hover{
+				opacity: 1;
+				cursor: pointer;
+			}
+		
+/*-----------------------------------------------------------------------------------------*/
+		/*NOUVELLE REUNION et EDITER REUNION*/
+			/*conteneur*/
+			#reunion_nouvelle, #reunion_editer{
+				background-color: white;
+				border: 1px solid #ddd;
+				padding: 20px;
+			}
+			
+			/*Titre de la page*/
+			#reunion_nouvelle > header, #reunion_editer > header{
+				padding-bottom: 10px;
+				text-align: center;
+				font-size: 23px;
+				font-weight: bold;
+			}
+			
+			/*input, select et textarea du formulaire*/
+			#reunion_nouvelle > table input, #reunion_nouvelle > table textarea, #reunion_nouvelle > table select, #reunion_editer > table input, #reunion_editer > table textarea, #reunion_editer > table select{
+				margin-bottom: 20px;
+				margin-left: 20px;
+			}
+			
+			/*positionnement bulle d'aide du titre*/
+			#reunion_nouvelle #aide_titre, #reunion_editer #aide_titre{
+				top: -25px;
+				right: 5px
+			}
+
+		
+/*-----------------------------------------------------------------------------------------*/
+		/*PROJETS*/
+			/*conteneur*/
+			#projets{
+				background-image: url('../ressources/brick.png');
+				border: 1px solid #ddd;
+				padding: 20px;
+			}
+			
+			/*titre du conteneur*/
+			#projets > header{
+				text-align: center;
+				padding: 10px;
+				margin: 0px 0px 20px 0px;
+				border: 1px dotted #ddd;
+				background-color: #f2f2f2;
+				font-size: 23px;
+				font-weight: bold;
+			}
+			
+			/*ul de la liste des projets*/
+			#projets > ul{
+				list-style-image: url('../ressources/projet.png');
+			}
+			
+			/*li de la liste des projets*/
+			#projets > ul > li{
+				position: relative;
+				margin-bottom: 10px;
+				padding: 10px;
+				border: 1px solid rgb(190,190,190);
+				background-color: white;
+			}
+			
+			#projets > ul > li:hover{
+				border-color: rgb(130,130,130);
+				box-shadow: 0px 0px 10px rgb(130,130,130);
+			}
+			
+			/*titre du projet*/
+			#projets > ul > li > header{
+				padding: 10px;
+				margin-bottom: 5px;
+				margin-bottom: 0px;
+				font-size: 22px;
+				font-weight: bold;
+			}
+			
+			/*date du projet*/
+			.projet_date{
+				margin-top: 0px;
+				margin-bottom: 10px;
+				padding-left: 20px;
+				font-size: 15px;
+				display: inline-block;
+				vertical-align: top;
+				width: 45%;
+			}
+			
+			/*avancement conteneur*/
+			.projet_avancement{
+				display: inline-block;
+				vertical-align: top;
+				width: 45%;
+				text-align: right;
+			}
+			
+			/*avancement detail*/
+			.etat_projet_terminer, .etat_projet_progress{
+				display: inline-block;
+				position: relative;
+				bottom: 7px;
+				border: 1px solid black;
+				border-radius: 5px;
+				margin-left: 10px;
+				padding: 3px 5px;
+			}
+			
+			/*projet avancement terminé*/
+			.etat_projet_terminer{
+				border-color: green;
+				background-color: rgb(181,255,181);
+				color: green;
+			}
+			
+			/*projet avancement en cours*/
+			.etat_projet_progress{
+				border-color: orange;
+				background-color: rgb(255,233,194);
+				color: orange;
+			}
+			
+			/*texte du projet*/
+			#projets > ul > li > p{
+				padding: 20px;
+				margin: 10px 0px;
+				border-top: 1px dashed rgb(200,200,200);
+				border-bottom: 1px dashed rgb(200,200,200);
+				background-color: rgba(255,255,255,0.7);
+				font-family : arial;
+				text-align: justify;
+			}
+			
+			/*boutons editer et supprimer*/
+			.projet_edite{
+				position: absolute;
+				top: 15px;
+				right: 10px;
+			}
+			
+			/*icones editer et supprimer*/
+			.projet_edite > span img{
+				opacity: 0.5;
+			}
+			
+			/*hover sur les icones editer et supprimer*/
+			.projet_edite > span img:hover{
+				opacity: 1;
+				cursor: pointer;
+			}
+			
+/*-----------------------------------------------------------------------------------------*/
+		/*NOUVEAU PROJET et EDITER PROJET*/
+			/*conteneur*/
+			#projet_nouveau, #projet_editer{
+				background-color: white;
+				border: 1px solid #ddd;
+				padding: 20px;
+			}
+			
+			/*Titre de la page*/
+			#projet_nouveau > header, #projet_editer > header{
+				padding-bottom: 20px;
+				text-align: center;
+				font-size: 23px;
+				font-weight: bold;
+			}
+			
+			/*input, select et textarea du formulaire*/
+			#projet_nouveau > table input, #projet_nouveau > table textarea, #projet_editer > table input, #projet_editer > table textarea, #projet_editer > table select{
+				margin-bottom: 20px;
+				margin-left: 20px;
+			}
+			
+			/*positionnement bulle d'aide du titre*/
+			#projet_nouveau #aide_titre, #projet_editer #aide_titre{
+				top: -25px;
+				right: 5px
+			}
+			
+/*-----------------------------------------------------------------------------------------*/
+		/*PROFIL d'un MEMBRE*/
+			/*conteneur*/
+			#profil{
+				background-color: white;
+				border: 1px solid #ddd;
+				padding : 20px;
+			}
+			
+			/*titre du conteneur*/
+			#profil > header{
+				text-align: center;
+				font-weight: bold;
+				font-size: 23px;
+				margin-bottom: 20px;
+			}
+			
+			/*icone du grade*/
+			#profil > img{
+				display: inline-block;
+				margin: 10px;
+				vertical-align: top;
+			}
+			
+			/*informations sur le profil*/
+			#profil > img + div{
+				display: inline-block;
+				margin: 10px;
+				vertical-align: top;
+			}
+			
+			/*vers Mon Profil*/
+			#profil > div + div + div{
+				margin: 10px 10px 0px 10px;
+				text-align: right;
+			}
+		
+/*-----------------------------------------------------------------------------------------*/
+		

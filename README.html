@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Read Me</title>
+		<style type="text/css">
+			h1{
+				text-transform: uppercase;
+			}
+			h1, h1+h2{
+				text-align: center;
+			}
+			section{
+				margin: 30px;
+				padding: 10px;
+			}
+			#htmlphp{
+				background-color: rgba(0,0,255,0.2);
+			}
+			#css{
+				background-color: rgba(255,0,0,0.2);
+			}
+			#mysql{
+				background-color: rgba(0,255,0,0.2);
+			}
+			#js{
+				background-color: rgba(255,255,0,0.2);
+			}
+			section > h2{
+				background-color: rgba(0,0,0,0.15);
+				padding: 10px;
+				margin-top: 0px;
+			}
+			p{
+				text-align: center;
+				color: rgb(120,120,120);
+			}
+			section > div{
+				margin: 20px 0px 0px 30px;
+			}
+			section ul{
+				margin: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Projet site web sur une association</h1>
+		<h2>Cédric DESGRANGES - Katia AIT OUMÉZIANE</h2>
+		<p>Tout le html/php/css/mysql a été entièrement écrit par nous. Aucun élément n'est copié/collé depuis le web ou autre, même si les enseignants et le contenu trouvé sur le web nous ont aidé.</p>
+		<section id="htmlphp">
+			<h2>[HTML - PHP]</h2>
+			<div>Il y a 2 structures HTML distincts pour notre projet:
+				<ul>
+					<li>celle de la page index.php : 3 colonnes</li>
+					<li>celle des pages "simples" qui sont des pages de validation d'action sur le site.</li>
+				</ul>
+			</div>
+			<div>Chacune de ces deux structures sont décomposées en trois conteneur :
+				<ul>
+					<li>header: en-tête</li>
+					<li>div #page ou div #cadre : corps principal de la page</li>
+					<li>footer : pied de page</li>
+				</ul>
+			</div>
+			<div>L'ensemble du contenu du site (a part les pages "simples") sont include dans la page index.php.La structure 3 colonnes de index.php comprend :
+				<ul>
+					<li>colonne 1 : le menu public et le menu membre</li>
+					<li>colonne 2 : conteneur des différentes pages du site</li>
+					<li>colonne 3 : conteneur de connexion et des réunions à venir / derniers membres inscrits</li>
+				</ul>
+			</div>
+			<div>Tous les fichiers include dans la colonne 2 de index.php ont leur nom terminant par .inc. Les autres sont alors des pages "simples".</div>
+			<div>Tous les fichiers php sont fait de la même façon: en premier toutes les fonctions php nécessaires et ensuite la création de la page html avec les appels de fonctions php. La grande majorité du php est sous forme de fonction.</div>
+			<div>
+		</section>
+		<section id="css">
+			<h2>[CSS]</h2>
+			<div>1er css comprend 5 fichiers :
+				<ul>
+					<li>header_footer.css : définit le css de l'en-tête et du pied de page de toutes les pages du site, mais aussi d'autres éléments ayant le même style quelque soit la page.</li>
+					<li>nav_event.css : définit le css des colonnes 1 et 3.</li>
+					<li>milieu.css : définit le css de la colonne 2 (conteneur central).</li>
+					<li>formulaire_inscription.css : définit le css de la page du formulaire d'inscription.</li>
+					<li>style_simple.css : définit le css des pages qui ne comportent pas les 3 colonnes.</li>
+				</ul>
+			</div>
+			<div>2eme css comprend 1 fichier:
+				<ul>
+					<li>mobile.css : définit le css de l'ensemble du site en adaptant le css précédent pour des tailles d'écrans inférieures à 640px de largeur donc essentiellement les mobiles/smartphones. Testé sur iPhone 3GS (iOS 5.1), Samsung Galaxy Ace</li>
+				</ul>
+			</div>
+		</section>
+		<section id="mysql">
+			<h2>[MYSQL]</h2>
+			<div>La base de donnée comprend 5 tables:
+				<ul>
+					<li>identifiants</li>
+						<ul>
+							<li>id (int) AI : id du membre</li>
+							<li>login (varchar-25) : pseudonyme</li>
+							<li>mdp (varchar-255) : mot de passe</li>
+							<li>nom (varchar-25) : nom du membre</li>
+							<li>prenom (varchar-25) : prénom du membre</li>
+							<li>sexe (varchar-1) : boolean du sexe du membre</li>
+							<li>code (int) : code postal</li>
+							<li>description (text) : description du membre</li>
+							<li>date_inscription (date) : date d'inscription au format AAAA-MM-JJ</li>
+							<li>nbr_connexion (int) : nombre de fois que le membre s'est connecté sur le site</li>
+							<li>nbr_ecriture (int) : nombre de fois que le membre a ajouté/modifié un article/projet/réunion</li>
+							<li>age (int) : âge du membre</li>
+							<li>grade (tinyint) : grade du membre [0=membre, 10=membre du conseil d'administration, 20=vice président, 30=président]</li>
+						</ul>
+					<li>articles</li>
+						<ul>
+							<li>id (int) AI : id de l'article</li>
+							<li>titre (varchar-60) : titre de l'article</li>
+							<li>text (text) : texte de l'article</li>
+							<li>auteur (int) : id de l'auteur de l'article</li>
+							<li>date (date) : date d'ajout de l'article au format AAAA-MM-JJ</li>
+							<li>modificateur (text) : ensemble des id des personnes ayant édité l'article au format ID-AAAA-MM-JJ séparé par |</li>
+							<li>statut (tinyint) : boolean pour article privé ou public</li>
+						</ul>
+					<li>reunions</li>
+						<ul>
+							<li>id (int) AI : id de la réunion</li>
+							<li>titre (varchar-60) : titre de la réunion</li>
+							<li>description (text) : texte de la réunion</li>
+							<li>date (date) : date de la réunion au format AAAA-MM-JJ</li>
+							<li>heure (time) : heure de la réunion au format hh:mm:ss</li>
+							<li>participants (varchar-255): ensemble des id des personnes s'étant inscrit à la réunion séparé par |</li>
+						</ul>
+					<li>projets</li>
+						<ul>
+							<li>id (int) AI : id du projet</li>
+							<li>titre (varchar-60) : titre du projet</li>
+							<li>description (text) : texte du projet</li>
+							<li>date_cration (date) : date d'ajout du projet</li>
+							<li>etat (tinyint) : boolean pour projet terminé ou en cours</li>
+							<li>participants (varchar-255) : ensemble des id des personnes participants au projet séparé par |</li>
+						</ul>
+					<li>commentaires_article</li>
+						<ul>
+							<li>id (int) AI : id du commentaire</li>
+							<li>texte (text) : texte du commentaire</li>
+							<li>auteur (int) : id de l'auteur du commentaire</li>
+							<li>article (int) : id de l'article du commentaire</li>
+							<li>date (date) : date d'ajout du commentaire au format AAAA-MM-JJ</li>
+							<li>heure (time) : heure d'ajout du commentaire au format hh:mm:ss</li>
+						</ul>
+				</ul>
+			</div>
+			<div>Pour changer l'adresse, nom de base de donnée, user ou password, il suffit de modifier les variables de la fonction connexion() dans le fichier connexion_bdd.php.</div>
+			<div>Le fichier sql pour générer la base de donnée se trouve dans le dossier Base de donnée.</div>
+		</section>
+		<section id="js">
+			<h2>[JAVASCRIPT]</h2>
+			<div>Nous avons utilisé la librairie <a href="http://code.jquery.com/jquery-2.0.0.min.js">JQuery v2.0.0</a>. Tous le javascript est situé dans des fichiers .js dans le dossier javascript. Aucun code javascript n'est présent dans les pages htmls générées</div>
+			<div>Fichiers javascript :
+				<ul>
+					<li>jquery.js : <a href="http://code.jquery.com/jquery-2.0.0.min.js">JQuery v2.0.0</a></li>
+					<li>aide_titre.js : met à jour un nombre pour qu'il soit équivalent à la longeur de la chaîne de caractères tapé dans un input</li>
+					<li>supprimer_modif.js : ouvre une fenetre de confirmation pour la suppression / affiche les personnes ayant modifié un article si plus de 2</li>
+					<li>commentaire.js : ajoute un commentaire à la bdd et l'ajoute au DOM / supprime un commentaire de la bdd et le cache du DOM</li>
+		</section>
+	</body>
+</html>
